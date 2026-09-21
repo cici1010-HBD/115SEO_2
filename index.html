@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日常療癒甜點與冰品特輯 🍰✨</title>
+    <style>
+        /* 溫馨暖色系質感漸層背景 */
+        body {
+            background: linear-gradient(135deg, #2c1a1d, #4a2e35, #1f1a1c);
+            background-attachment: fixed;
+            color: #fceade;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+            line-height: 1.8;
+        }
+
+        /* 頂部標題 */
+        h1 {
+            text-align: center;
+            color: #ffb703;
+            text-shadow: 0 0 15px rgba(255, 183, 3, 0.6);
+            font-size: 38px;
+            margin-bottom: 30px;
+        }
+
+        /* 分頁按鈕區域 */
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        /* 分頁按鈕設計 */
+        .tab-button {
+            background: rgba(255, 255, 255, 0.08);
+            color: #ffb703;
+            border: 2px solid #ffb703;
+            border-radius: 25px;
+            padding: 10px 22px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .tab-button:hover {
+            background: rgba(255, 183, 3, 0.25);
+            transform: translateY(-2px);
+        }
+
+        .tab-button.active {
+            background: #ffb703;
+            color: #2c1a1d;
+            box-shadow: 0 0 15px rgba(255, 183, 3, 0.8);
+        }
+
+        /* 分頁內容 */
+        .tab-content {
+            display: none;
+            max-width: 850px;
+            margin: 0 auto;
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 網誌卡片 */
+        .card {
+            background: rgba(20, 15, 18, 0.75);
+            border: 1px solid rgba(255, 183, 3, 0.3);
+            border-radius: 15px;
+            padding: 35px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+
+        .image-gallery img {
+            max-height: 320px;
+            border-radius: 10px;
+            border: 2px solid #d4a373;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+            object-fit: cover;
+        }
+
+        .text-content h2 {
+            color: #ffb703;
+            border-bottom: 2px dashed rgba(255, 183, 3, 0.4);
+            padding-bottom: 8px;
+        }
+
+        .text-content p {
+            font-size: 17px;
+            letter-spacing: 1px;
+            text-align: justify;
+        }
+
+        /* 標籤小幫手 */
+        .tags {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #d4a373;
+        }
+
+        /* 影音地圖容器 */
+        .media-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        iframe {
+            border-radius: 10px;
+            border: 2px solid #ffb703;
+        }
+
+        /* 頁尾版權 */
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+            border-top: 1px dashed rgba(255, 183, 3, 0.4);
+            color: #b5838d;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: #ffb703;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🍰 療癒系甜點與冰品私房手札 🍨</h1>
+
+    <!-- 分頁按鈕 -->
+    <div class="tab-container">
+        <button class="tab-button active" onclick="openTab(event, 'tab1')">☕️ 台東海特咖啡</button>
+        <button class="tab-button" onclick="openTab(event, 'tab2')">🍧 高雄斗六冰城</button>
+        <button class="tab-button" onclick="openTab(event, 'tab3')">🍒 COLD STONE 聯名</button>
+        <button class="tab-button" onclick="openTab(event, 'tab4')">🍞 嘉義幸福山丘</button>
+    </div>
+
+    <!-- 篇章 1：台東 HATT 海特咖啡 -->
+    <div id="tab1" class="tab-content" style="display: block;">
+        <div class="card">
+            <div class="image-gallery">
+                <img src="images/blogger 1.jpg" alt="精緻杯子蛋糕">
+                <img src="images/blogger 2.jpg" alt="特色戚風蛋糕">
+            </div>
+            <div class="text-content">
+                <h2>台東療癒系咖啡廳推薦｜HATT 海特咖啡：藏在巷弄裡的美味甜點與午後時光</h2>
+                <p>說到台東的慢活步調，總讓人想找個舒服的角落靜靜待上一整天。今天帶大家來到隱身在台東巷弄裡的質感好店——HATT 海特咖啡 ☕️🌿。</p>
+                <p>一走進店內，就能感受到那種溫馨又帶點復古的獨特氛圍。不僅環境讓人感到放鬆，他們家的甜點更是讓人驚豔！🍰</p>
+                <p><strong>🍰 今日甜點推薦：</strong><br>
+                • <strong>精緻杯子蛋糕</strong>：上面點綴著新鮮酸甜的草莓，搭配綿密滑順的奶油與紮實的蛋糕體，一口咬下幸福感滿分 🥰。<br>
+                • <strong>特色戚風蛋糕</strong>：茶香四ird的蛋糕體夾著濃郁滑順的抹綠內餡，層次豐富卻不甜膩，配上一杯好咖啡簡直是絕配 🍵✨。</p>
+                <p>如果你來到台東，不妨放慢腳步，來海特咖啡享受一段美好的下午茶時光吧！</p>
+                <div class="tags">🏷️ 標籤：台東美食, 咖啡廳推薦, 巷弄甜點, HATT海特咖啡, 下午茶</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 篇章 2：高雄斗六冰城 -->
+    <div id="tab2" class="tab-content">
+        <div class="card">
+            <div class="image-gallery">
+                <img src="images/blogger 3.jpg" alt="斗六冰城招牌">
+                <img src="images/blogger 4.jpg" alt="古早味手工冰淇淋">
+            </div>
+            <div class="text-content">
+                <h2>🍧🔥 高雄旗津古早味必吃推薦｜斗六冰城總店：傳承一甲子的消暑手工冰淇淋 🍨✨</h2>
+                <p>夏天到海邊玩，怎麼能少了一碗冰涼消暑的古早味冰品呢？今天帶大家來到位於高雄旗津的超人氣老店——斗六冰城總店 🧊🌊！</p>
+                <p>一走到店門口，就能感受到那種充滿歷史感與人情味的復古招牌。這裡的冰淇淋堅持傳統手工製作，口感綿密、滋味濃郁，每一口都是懷念的古早好味道 🥰。</p>
+                <p><strong>🍨 人氣必吃推薦：</strong><br>
+                多種經典口味任你搭配，不管是濃郁的芋頭、清爽的水果風味，或是經典的巧克力與香草，球球扎實、甜而不膩！坐在充滿復古風情的店裡吃著冰，彷彿時間都慢了下來 ☀️。</p>
+                
+                <!-- 嵌入 YouTube 短片 -->
+                <div class="media-container">
+                    <iframe width="315" height="560" src="https://www.youtube.com/embed/fieBHJYSobE" title="斗六冰城短片" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <p style="margin-top: 20px;">如果你來到旗津，千萬別錯過這間在地人也大推的傳奇冰城，一起來找回最純粹的清涼感動吧 💖！</p>
+                <div class="tags">🏷️ 標籤：高雄美食🍧, 旗津景點🌊, 古早味冰品🍦, 斗六冰城總店🏠, 冰淇淋推薦💖</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 篇章 3：COLD STONE 聯名 -->
+    <div id="tab3" class="tab-content">
+        <div class="card">
+            <div class="image-gallery">
+                <img src="images/blogger 5.jpg" alt="黑森林狂想曲">
+                <img src="images/blogger 6.jpg" alt="楓糖核桃樂園">
+            </div>
+            <div class="text-content">
+                <h2>🍒✨ 期間限定神仙聯名！COLD STONE x 紅葉蛋糕 x CREAM CO. 聯手推出「黑森林狂想曲」與「楓糖核桃樂園」 🍫🍁</h2>
+                <p>下雨天的車程裡，最需要來一份療癒人心的甜點撫慰心情 🌧️🚗。今天帶大家來開箱最近超火紅的神仙級跨界聯名——COLD STONE x 紅葉蛋糕 x CREAM CO. 鮮奶油有限公司聯手打造的夢幻冰品 🍧！</p>
+                <p>這次的期間限定（2026.03.06 - 2026.04.16）真的讓人每一款都想嘗試，快看看這兩款讓人融化的美味：</p>
+                <p>• 🍒 <strong>黑森林狂想曲</strong>：經典的黑森林元素完美融入濃郁冰淇淋中，上面點綴著誘人的櫻桃與豐富的巧克力碎片，苦甜交織的大人系口感，一口接一口停不下來 🍫✨！<br>
+                • 🍁 <strong>楓糖核桃樂園</strong>：香濃滑順的冰淇淋搭配滿滿的核桃與香甜楓糖，口感層次超豐富，核桃控絕對會大愛 🤎！</p>
+                <p>趁著期間限定，趕快把握機會去嚐鮮，給自己一個微甜的幸福午茶時光吧 ☀️🥰！</p>
+                <div class="tags">🏷️ 標籤：COLD STONE🍦, 紅葉蛋糕🎂, 聯名冰淇淋🍒, 期間限定新品✨, 甜點推薦💖</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 篇章 4：嘉義幸福山丘 -->
+    <div id="tab4" class="tab-content">
+        <div class="card">
+            <div class="image-gallery">
+                <img src="images/9ADBA93D-5D5F-43C1-AB70-326EFA12E27F.jpg" alt="雪白藍莓麵包">
+                <img src="images/19EEC16C-CBEB-4F99-8DC9-58AB62F1CD7A.jpg" alt="洋蔥起司鹹麵包與拿鐵">
+            </div>
+            <div class="text-content">
+                <h2>🌿 嘉義景觀咖啡廳推薦｜幸福山丘 Happy Hill：隱身山林間的藍莓甜點與愜意午茶 ☕️🍞</h2>
+                <p>在嘉義的日常步調中，平時除了兼顧雙主修與家教，若是想遠離塵塵囂透透氣，來到位於東區的「幸福山丘 Happy Hill」絕對是個好選擇 ⛰️。這裡不僅有美麗的自然景觀，手作烘焙更是讓人讚不絕口！</p>
+                <p><strong>🍞 今日午茶推薦：</strong><br>
+                • 🫐 <strong>雪白藍莓麵包</strong>：圓潤鬆軟的麵包夾著滿滿的鮮奶油，上頭鋪滿新鮮藍莓並撒上糖粉，酸甜交織的口感非常清爽，完全不膩口。<br>
+                • 🧅 <strong>洋蔥起司鹹麵包</strong>：烤得金黃酥脆的麵包底，鋪滿牽絲的起司與鮮甜洋蔥，香氣四溢，適合喜歡鹹食的你。<br>
+                • ☕️ <strong>特調冰飲與拿鐵</strong>：清涼的漸層冰飲與拿鐵，搭配印有「HAPPY HILL」專屬山丘與吐司圖案的可愛杯墊，讓整個下午茶時光更添一份童趣與溫馨 💖。</p>
+                <p>週末不妨給自己放個假，來山丘上吹吹風、吃塊好吃的麵包吧 ☀️！</p>
+                <div class="tags">🏷️ 標籤：嘉義美食🍰, 景觀咖啡☕️, 幸福山丘⛰️, 手作麵包🍞, 下午茶推薦✨</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 頁尾版權宣告 -->
+    <footer>
+        <p>版權所有 &copy; 2026 <span>日常療癒甜點與冰品私房手札</span> 🍰✨ <br>
+        115SEO 江若慈課程作業練習專用・圖文內容皆為原創分享。</p>
+    </footer>
+
+    <!-- JavaScript 控制分頁 -->
+    <script>
+        function openTab(evt, tabName) {
+            let tabcontent = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            let tablinks = document.getElementsByClassName("tab-button");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+</html>
